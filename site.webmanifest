@@ -1,0 +1,14 @@
+{
+  "short_name": "OmniChannel CTO",
+  "name": "OmniChannel CTO",
+  "display": "standalone",
+  "description": "OmniChannel CTO is a suite of applications that help retailers accelerate their Omnichannel journey with ready to use and customizable apps.",
+  "icons": [{
+    "src": "icon.png",
+    "type": "image/png",
+    "sizes": "192x192"
+  }],
+  "start_url": "/?utm_source=homescreen",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff"
+}
