@@ -1,7 +1,7 @@
 # OmniChannel CTO
 OmniChannel CTO is an open source stack of omnichannel retail apps. Its a new front end for your backend.
 
-![]https://omnichannelcto.com/img/OG_image.png
+![](https://omnichannelcto.com/img/OG_image.png)
 
 Built on Ionic + Vue, a flexible API integration layer allow it can be connected to any backend OMS or ERP to super charge what your staff are capable of.
 
