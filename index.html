@@ -95,8 +95,22 @@
         </p>
       </div>
       <div class="content">
+        <div id="bopisf0" class="feature">
+          <h3>
+            Accurate Store Inventory Visibility
+          </h3>
+          <p>
+            Provide real-time product and inventory visibility to your shoppers when they browse your website.
+          </p>
+        </div>
+        <div id="bopis0" class="iPhone">
+          <img src="img/DC/dc_2.png" alt="In Store Availability">
+        </div>
         <div id="bopis1" class="iPhone">
           <img src="img/BOPIS/Bopis_1.png" alt="BOPIS">
+        </div>
+        <div id="bopis2" class="iPhone">
+          <img src="img/BOPIS/Bopis_2.png" alt="BOPIS">
         </div>
         <div id="bopisf1"class="feature">
           <h3>
@@ -121,9 +135,6 @@
           <p>
             Enable sales associates to access all order information immediately to improve customer service.
           </p>
-        </div>
-        <div id="bopis2" class="iPhone">
-          <img src="img/BOPIS/Bopis_2.png" alt="BOPIS">
         </div>
       </div>
     </section>
@@ -578,24 +589,33 @@
   }
 
   /* BOPIS */
-  #bopis1{
+
+  #bopis0{
     grid-row: 2;
   }
 
-  #bopis2{
+  #bopis1{
     grid-row: 4;
+  }
+
+  #bopis2{
+    grid-row: 6;
   }  
 
-  #bopisf1{
+  #bopisf0{
     grid-row: 1;
   }
 
-  #bopisf2{
+  #bopisf1{
     grid-row: 3;
   }
 
-  #bopisf3{
+  #bopisf2{
     grid-row: 5;
+  }
+
+  #bopisf3{
+    grid-row: 7;
   }
 
   /* DC */
@@ -796,34 +816,47 @@
     }
 
     #bopis > .content{
-      grid-template-rows: min-content min-content auto 1fr;
+      grid-template-rows: .7fr 1fr .7fr max-content auto;
       grid-template-columns: 1fr 1fr;
       grid-column-gap: var(--grid-gap);
     }
 
+    #bopis0{
+      grid-row: 1 / 3;
+      grid-column: 1;
+    }
+
     #bopis1{
-      grid-row: 1 / 4;
+      grid-row: 2 / 5;
+      align-self: center;
     }
 
     #bopis2{
-      grid-row: 3 / 5;
+      grid-row: 4 / 7;
       grid-column: 1;
-      margin-top: 85px;
+      align-self: flex-end;
+    }
+
+    #bopisf0{
+      grid-row: 1;
+      grid-column: 2;
+      align-self: end;
     }
 
     #bopisf1{
-      grid-area: 1 / 1;
-      padding-top: 50px;
+      grid-area: 3 / 1;
+      align-self: center;
     }
 
     #bopisf2{
-      grid-area: 2 / 1 / 3 / 2;
+      grid-area: 5 / 2 / 6 / 3;
       padding-top: 63px;
     }
     
     #bopisf3{
-      grid-row: 4;
+      grid-row: 6;
       grid-column: 2;
+      padding-bottom: 80px;
       margin-top: 102px;
     }
 
