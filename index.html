@@ -103,8 +103,13 @@
             Provide real-time product and inventory visibility to your shoppers when they browse your website.
           </p>
         </div>
-        <div id="bopis0" class="iPhone">
-          <img src="img/DC/dc_2.png" alt="In Store Availability">
+        <div id="accurateInventory">
+          <div id="bopis-1" class="iPhone">
+            <img src="img/DC/dc_1.png" alt="Product Page">
+          </div>
+          <div id="bopis0" class="iPhone">
+            <img src="img/DC/dc_2.png" alt="In Store Availability">
+          </div>
         </div>
         <div id="bopis1" class="iPhone">
           <img src="img/BOPIS/Bopis_1.png" alt="BOPIS">
@@ -646,9 +651,23 @@
   }
 
   /* BOPIS */
+  #accurateInventory{
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: max-content 70px max-content;
+    justify-content: center;
+    max-width: var(--iPhone-width);
+    margin: auto;
+  }
+
+  #bopis-1{
+    grid-row: 1;
+    grid-column: 1 / 3;
+  }
 
   #bopis0{
-    grid-row: 2;
+    grid-row: 1;
+    grid-column: 2 / 4;
   }
 
   #bopis1{
@@ -779,6 +798,10 @@
 
   /* Mobile only CSS */
   @media only screen and (max-width: 980px) {
+    #home{
+      overflow-x: hidden;
+    }
+    
     .logo{
       max-height: 10vh;
     }
@@ -793,7 +816,6 @@
     .content{
       grid-auto-flow: row;
       grid-row-gap: 24px;
-      overflow: hidden;
     }
   }
   /* Mobile only CSS end */
@@ -879,10 +901,18 @@
       grid-column-gap: var(--grid-gap);
     }
 
-    #bopis0{
+    #accurateInventory{
       grid-row: 1 / 3;
       grid-column: 1;
+      grid-template-columns: max-content 150px max-content;
+      justify-content: end;
+      margin: unset;
     }
+
+    /* #bopis0{
+      grid-row: 1 / 3;
+      grid-column: 1;
+    } */
 
     #bopis1{
       grid-row: 2 / 5;
