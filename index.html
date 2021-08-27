@@ -265,17 +265,53 @@
     <section id="po">
       <div class="intro">
         <h1>Pre orders</h1>
-        <br>
-        <p>
-          Enable merchandisers to reserve some inventory for stores by specifying the quantity of available inventory they want to release for pre-orders that are in the queue.
-        </p>
       </div>
       <div class="content">
-        <div id="PO1" class="iPad">
-          <img src="img/Preorder/Preorder_1.png" alt="BOPIS">
+        <div id="POf3" class="feature">
+          <h3>
+            Inventory visibility of future inventory
+          </h3>
+          <p>
+            Provides visibility of future inventory by accessing information from POs and ASNs from the ERP system and communicates this information to the eCommerce platform so that it does not accept orders that cannot be fulfilled.
+          </p>
         </div>
-        <div id="PO2" class="iPad">
-          <img src="img/Preorder/Preorder_2.png" alt="BOPIS">
+        <div id="PO3" class="iPhone">
+          <img src="img/Preorder/Preorder_3.png" alt="Preorder Button">
+        </div>
+        <div id="POf4" class="feature">
+          <h3>
+            Pre-order button with estimated delivery date
+          </h3>
+          <p>
+            Shows the “Pre-order” button and estimated delivery date on the product detail pages. Automatically converts the “Pre-Order” button to “Add-to-cart” once the product is released and inventory is available. Automatically converts the “Add-to-cart” button to the “Backorder” button if the product is out of stock. 
+          </p>
+        </div>
+        <div id="PO4" class="iPhone">
+          <img src="img/Preorder/Preorder_4.png" alt="Backorder Button">
+        </div>
+        <div id="POf5" class="feature">
+          <h3>
+            Back-order button with estimated delivery date
+          </h3>
+          <p>
+            Shows the “Backorder” button and estimated delivery date on the product detail pages when inventory is out of stock. Automatically converts the “Backorder” button to “Add-to-cart” once the inventory is back in stock.
+          </p>
+        </div>
+        <div id="Releasing">
+          <div id="POf6" class="feature">
+            <h3>
+              Inventory allocation between stores and pre-orders
+            </h3>
+            <p>
+              Enable merchandisers to reserve some inventory for stores by specifying the quantity of available inventory they want to release for pre-orders that are in the queue.
+            </p>
+          </div>
+          <!-- <div id="PO1" class="iPad">
+            <img src="img/Preorder/Preorder_1.png" alt="Preorder Bulk Releasing">
+          </div> -->
+          <div id="PO2" class="iPad">
+            <img src="img/Preorder/Preorder_2.png" alt="Preorder Order Releasing">
+          </div>
         </div>
       </div>
     </section>
@@ -1044,12 +1080,54 @@
     }
 
     /* Pre Order */
+
+    #po > .content{
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(4, auto);
+    }
+
+    #POf3{
+      padding-top: 30px;
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    #POf4{
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    #PO3{
+      grid-column: 2;
+      grid-row: 1 / 3;
+    }
+
+    #PO4{
+      grid-column: 1;
+      grid-row: 3;
+    }
+    
+    #POf5{
+      grid-column: 2;
+      align-self: center;
+    }
+
+    #Releasing{
+      margin-top: 100px;
+      grid-column: 1 / 3;
+    }
+
+    #POf6{
+      width: var(--iPad-width);
+      margin: auto;
+    }
+
     #PO1, #PO2{
       margin: auto;
     }
 
     #PO2{
-      margin-top: 80px;
+      margin-top: 45px;
     }
 
     /* Ship from Store */
