@@ -794,6 +794,12 @@
     grid-row: 2;
   }
   /* Pre Order */
+  
+  #PO2{
+    margin-top: 45px;
+  }
+
+
 
   /* Store Inventory Management */
   #simf1{
@@ -1084,6 +1090,7 @@
     #po > .content{
       grid-template-columns: 1fr 1fr;
       grid-template-rows: repeat(4, auto);
+      grid-column-gap: var(--grid-gap);
     }
 
     #POf3{
@@ -1123,11 +1130,8 @@
     }
 
     #PO1, #PO2{
-      margin: auto;
-    }
-
-    #PO2{
-      margin-top: 45px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     /* Ship from Store */
