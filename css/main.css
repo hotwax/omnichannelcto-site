@@ -267,8 +267,11 @@ html{
   scroll-behavior: smooth;
 }
 
-body{
+html, body{
   overflow-x: hidden;
+}
+
+body{
   background-color: var(--surface);
   color: var(--font-color-body);
 }
