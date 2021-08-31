@@ -267,8 +267,11 @@ html{
   scroll-behavior: smooth;
 }
 
-body{
+html, body{
   overflow-x: hidden;
+}
+
+body{
   background-color: var(--surface);
   color: var(--font-color-body);
 }
@@ -410,6 +413,13 @@ img{
   position: relative;
   z-index: var(--image-zindex);
   max-width: 100%;
+}
+
+/* Mobile only CSS */
+@media only screen and (max-width: 980px){
+  #home{
+    overflow-x: hidden;
+  }
 }
 
 /* Desktop CSS */
