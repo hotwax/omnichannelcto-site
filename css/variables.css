@@ -1,0 +1,10 @@
+@media (min-width: 991px) {
+  .apps {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+    gap: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0px 30px;
+  }
+}
