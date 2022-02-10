@@ -84,10 +84,6 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-/* ==========================================================================
    Helper classes
    ========================================================================== */
 
@@ -261,3 +257,103 @@ textarea {
   }
 }
 
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* Style Variables */
+
+html {
+  /** Colors **/
+  --color-red: #ec2227;
+  --color-orange: #f79421;
+  --color-black: #000;
+  --color-grey: #666;
+
+  /** Spacer **/
+  --spacer-2xs: 0.25rem;  /* 4px */
+  --spacer-xs: 0.5rem;    /* 8px */
+  --spacer-sm: 1rem;      /* 16px */
+  --spacer-base: 1.5rem;  /* 24px */
+  --spacer-lg: 2rem;      /* 32px */
+  --spacer-xl: 2.5rem;    /* 40px */
+  --spacer-2xl: 5rem;     /* 80px */
+  --spacer-3xl: 10rem;    /* 160px */
+}
+
+body {
+  /** Typography **/
+  --font-family--primary: "Open Sans", sans-serif;
+  --font-family--secondary: "Montserrat", sans-serif;
+
+  --font-weight--light: 300;
+  --font-weight--normal: 400;
+  --font-weight--medium: 500;
+  --font-weight--semibold: 600;
+  --font-weight--bold: 700;
+
+  --font-size--2xs: 0.75rem;    /* 12px */    
+  --font-size--xs: 0.875rem;    /* 14px */   
+  --font-size--sm: 1rem;        /* 16px */     
+  --font-size--base: 1.125rem;  /* 18px */             
+  --font-size--lg:  2rem;    /* 32px */
+  --font-size--l: 3.5rem;     /* 56px */ 
+  --font-size--xl: 5rem;     /* 44px */
+}
+
+  h1, h2, h3, h4, h5, h6{
+    font-family: var(--font-family--secondary);
+    margin: 0;
+  }
+
+  h1 {
+    font-size: var(--font-size--l);
+  }
+
+  h2 {
+    font-size: var(--font-size--lg);
+  }
+
+  h3 {
+    font-size: var(--font-size--base);
+  }
+
+  p{
+    font-family: var(--font-family--primary);
+    font-size: var(--font-size--xs);
+  }
+
+  a {
+    font-family: var(--font-family--primary);
+  }
+
+  /* Globabl navbar styling */
+  #global {
+    height: 72px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+  } 
+
+  #global > div {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1170px;
+  }
+
+  .site > a {
+    font-size: 11px;
+    font-weight: var(--font-weight--semibold);
+    color: black;
+    text-transform: uppercase;
+    padding: 24px 20px;
+  }
+
+ /* Desktop only CSS */
+
+@media only screen and (min-width: 35em) {
+
+}

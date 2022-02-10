@@ -1,0 +1,239 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Shopify Apps</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/main.css">
+
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=OpenSans:100,200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  
+  <nav id="global">
+    <div>
+      <!-- Logo-->
+      <a href="https://www.hotwax.co/">
+        <img src="../img/HC Logo.svg" class="logo" alt="Logo" />
+      </a>
+
+      <div class="site">
+        <a href="">Solutions</a>
+        <a href="">Products</a>
+        <a href="">Partners</a>
+        <a href="">About</a>
+        <a href="">Resources</a>
+        <a href="">Connect</a>
+      </div>
+    </div>
+  </nav>
+  
+  <header>
+    <div class="content">
+      <h1>HOTWAX COMMERCE</h1>
+      <h2>Omnichannel Order Management System for Retail Brands</h2>
+      <p>
+        HotWax Commerce provides retailers with the best return on their
+        inventory by facilitating omnichannel retailing strategies such as
+        same-day Buy Online Pick-Up In Store (BOPIS), Ship From Store, and
+        Pre-Orders in order to increase conversion rates and profitability.
+      </p>
+    </div>
+  </header>
+
+  <!-- Shopify apps cards-->
+  <nav>
+    <h2>Shopify apps</h2>
+
+    <div class="apps">
+     
+      <a href="../pages/detail.html">
+        <div class="app">
+          <div class = "media">
+            <!--TODO insert shopify bopis image-->
+            <img src="../assets/AppsPlaceholder.jpg"/>
+          </div>
+          <div class="card-content">
+            <h3>Shopify Bopis</h3>
+            <p>
+              HotWax Commerce provides retailers with the best return on their
+              inventory by facilitating omnichannel retailing strategies such
+              as same-day Buy Online Pick-Up In Store (BOPIS), Ship From
+              Store, and Pre-Orders in order to increase conversion rates and
+              profitability.
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <a href="../pages/detail.html">
+        <div class="app">
+
+          <div class="media">
+            <!--TODO insert shopify preorder image-->
+            <img src="../assets/AppsPlaceholder.jpg"/>
+          </div>
+          <div class="card-content">
+            <h3>Shopify Preorder</h3>
+            <p>
+              HotWax Commerce provides retailers with the best return on their
+              inventory by facilitating omnichannel retailing strategies such
+              as same-day Buy Online Pick-Up In Store (BOPIS), Ship From
+              Store, and Pre-Orders in order to increase conversion rates and
+              profitability.
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <a href="../pages/detail.html">
+        <div class="app">
+          <div class="media">
+            <!--TODO insert shopify hc oms image-->
+            <img src="../assets/AppsPlaceholder.jpg"/>
+          </div>
+          <div class="card-content">
+            <h3>Shopify Hc Oms</h3>
+            <p>
+              HotWax Commerce provides retailers with the best return on
+              their inventory by facilitating omnichannel retailing
+              strategies such as same-day Buy OnlineI Pick-Up In Store
+              (BOPIS), Ship From Store, and Pre-Orders in order to increase
+              conversion rates and profitability.
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <a href="../pages/detail.html">
+        <div class="app">
+          <div class="media">
+            <!--TODO insert shopify store mode image-->
+            <img src="../assets/AppsPlaceholder.jpg"/>
+          </div>
+          <div class="card-content">
+            <h3>Shopify Store Mode</h3>
+            <p>
+              HotWax Commerce provides retailers with the best return on
+              their inventory by facilitating omnichannel retailing
+              strategies such as same-day Buy Online Pick-Up In Store
+              (BOPIS), Ship From Store, and Pre-Orders in order to increase
+              conversion rates and profitability.
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </nav>
+</body>
+
+</html>
+
+<style>
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .logo {
+    width: auto;
+    height: 58px;
+  }
+
+  header {
+    padding-top: 80px;
+    background-image: linear-gradient(180deg, #fff, hsla(0, 0%, 100%, 0) 36%), 
+                      linear-gradient(180deg, hsla(0, 0%, 100%, 0.99), 
+                      hsla(0, 0%, 100%,         0.96)), 
+                      url(https://www.hotwax.co/wp-content/themes/hotwax-2020/images/fashionbg.svg);
+  }
+
+  header .content{
+    max-width: 816px;
+    margin: auto;
+  }
+
+  header .content > h2 {
+    margin-top: 30px;
+    font-family: var(--font-family--primary);
+    font-weight: var(--font-weight--bold);
+  }
+
+  header .content > p {
+    font-size: 22px;
+    color: var(--color-grey);
+    line-height: 33px;
+    padding: 20px 0 50px;
+  }
+
+  header,
+  .card-header {
+    text-align: center;
+  }
+
+  nav {
+    text-align: center;
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  nav > h2 {
+    margin-bottom: var(--spacer-xl);
+  }
+
+  .apps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 10px;
+  }
+
+  .app {
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px #00000017;
+    overflow: hidden;
+    transition: box-shadow 150ms ease-in;
+  }
+
+  .media {
+    height: 180px;
+  }
+
+  .media > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .card-content {
+    padding: 8px;
+    color: var(--color-grey);
+  }
+
+  /* desktop only css */
+
+  @media only screen and (min-width: 35em) {
+    .app:hover {
+      box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.08);
+    }
+  }
+</style>
