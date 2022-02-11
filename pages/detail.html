@@ -25,33 +25,46 @@
   </head>
 
 <body>
-  <img src="../assets/logo-hotwax.svg" class="logo">
-  
+  <nav id="global">
+    <div>
+      <!-- Logo-->
+      <a href="https://www.hotwax.co/">
+        <img src="../img/HC Logo.svg" class="logo" alt="Logo" />
+      </a>
+
+      <div class="site">
+        <a href="">Solutions</a>
+        <a href="">Products</a>
+        <a href="">Partners</a>
+        <a href="">About</a>
+        <a href="">Resources</a>
+        <a href="">Connect</a>
+      </div>
+    </div>
+  </nav>
+
   <main>
-    <section class="app-info">
-      <h1>Shopify Bopis</h1>
-      <!-- TODO Add app actual description-->
-      <p>HotWax Commerce provides retailers with the best return on their
-        inventory by facilitating omnichannel retailing strategies such
-        as same-day Buy Online Pick-Up In Store (BOPIS), Ship From
-        Store, and Pre-Orders in order to increase conversion rates and
-        profitability. HotWax Commerce provides retailers with the best return on their
-        inventory by facilitating omnichannel retailing strategies such
-        as same-day Buy Online Pick-Up In Store (BOPIS), Ship From
-        Store, and Pre-Orders in order to increase conversion rates and
-        profitability. HotWax Commerce provides retailers with the best return on their
-        inventory by facilitating omnichannel retailing strategies such
-        as same-day Buy Online Pick-Up In Store (BOPIS), Ship From
-        Store, and Pre-Orders in order to increase conversion rates and
-        profitability.
-      </p>
-    </section>
+    <h1>Shopify Bopis</h1>
+    <!-- TODO Add app actual description-->
+    <p>HotWax Commerce provides retailers with the best return on their
+      inventory by facilitating omnichannel retailing strategies such
+      as same-day Buy Online Pick-Up In Store (BOPIS), Ship From
+      Store, and Pre-Orders in order to increase conversion rates and
+      profitability. HotWax Commerce provides retailers with the best return on their
+      inventory by facilitating omnichannel retailing strategies such
+      as same-day Buy Online Pick-Up In Store (BOPIS), Ship From
+      Store, and Pre-Orders in order to increase conversion rates and
+      profitability. HotWax Commerce provides retailers with the best return on their
+      inventory by facilitating omnichannel retailing strategies such
+      as same-day Buy Online Pick-Up In Store (BOPIS), Ship From
+      Store, and Pre-Orders in order to increase conversion rates and
+      profitability.
+    </p>
 
     <form>
-      <img src="../assets/AppsPlaceholder.jpg" class="app-image"><br><br>
-      <label>Shop</label><br>
-      <input type="url"><br><br>
-      <input type="submit" value="Install">
+      <img src="../assets/AppsPlaceholder.jpg" class="app-image">
+      <input type="url" placeholder="Shop URL" class="store">
+      <input type="submit" value="Install" class="cta">
     </form>
   </main>
 </body>
@@ -64,25 +77,87 @@
   }
   main {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 30%;
     gap: 20px;
-    width: 800px;
+    row-gap: var(--spacer-2xl);
+    width: 1100px;
     margin: auto;
   }
 
-  p {
-    border-right: 1px solid black;
-    border-left: 1px solid black;
-    padding: 0 10px;
+  h1 {
+    grid-row: 1;
+    grid-column: span 2;
+    padding-left: var(--spacer-sm);
+    margin-top: var(--spacer-2xl);
   }
 
-  form {
-    margin-top: 64px;
+  p {
+    grid-row: 2;
+    padding: 0 20px;
+    margin: 0;
+    border-right: 1px solid var(--color-grey);
+    border-left: 1px solid var(--color-grey);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 2rem;
   }
 
   .app-image {
-    height: 150px;
+    max-width: 100%;
     border: 1px solid black;
     border-radius: 10px;
+  }
+
+  input.store {
+    width: 100%;
+    padding: 12px;
+    border-width: .5px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: var(--spacer-lg);
+  }
+
+  input.cta {
+  min-width: 160px;
+  padding: 15px 20px;
+  border-radius: 4px;
+  border: none;
+  width: 100%;
+  margin-top: var(--spacer-sm);
+  background-color: #ec2227;
+  background-image: -webkit-gradient(linear, left top, left bottom, 
+                    from(rgba(236, 34, 39, 0.95)), 
+                    to(rgba(236, 34, 39, 0.95))), 
+                    url('https://www.hotwax.co/wp-content/themes/hotwax-2020/images/grid-flat-transparent-thicker.svg');
+  background-image: linear-gradient(180deg, 
+                  rgba(236, 34, 39, 0.95), 
+                  rgba(236, 34, 39, 0.95)), 
+                  url('https://www.hotwax.co/wp-content/themes/hotwax-2020/images/grid-flat-transparent-thicker.svg');
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, 420px;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  }
+
+  input.cta:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, 
+                      from(rgba(236, 34, 39, 0.98)), 
+                      to(rgba(236, 34, 39, 0.98))), 
+                      url('https://www.hotwax.co/wp-content/themes/hotwax-2020/images/grid-flat-transparent-thicker.svg');
+    background-image: linear-gradient(180deg, 
+                    rgba(236, 34, 39, 0.98), 
+                    rgba(236, 34, 39, 0.98)), 
+                    url('https://www.hotwax.co/wp-content/themes/hotwax-2020/images/grid-flat-transparent-thicker.svg');
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, 420px;
+    box-shadow: 0 0 5px 0 #ec2227;
+    color: #ffffff;
   }
 </style>

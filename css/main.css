@@ -301,7 +301,7 @@ body {
   --font-size--xl: 5rem;     /* 44px */
 }
 
-  h1, h2, h3, h4, h5, h6{
+  h1, h2, h3, h4, h5, h6, label, input{
     font-family: var(--font-family--secondary);
     margin: 0;
   }
@@ -336,18 +336,25 @@ body {
     top: 0;
   } 
 
+  .logo {
+    width: auto;
+    height: 58px;
+  }
+
   #global > div {
     display: flex;
     flex: 1;
     justify-content: space-between;
     align-items: center;
     max-width: 1170px;
+    margin: auto;
   }
 
   .site > a {
     font-size: 11px;
     font-weight: var(--font-weight--semibold);
     color: black;
+    text-decoration: none;
     text-transform: uppercase;
     padding: 24px 20px;
   }
