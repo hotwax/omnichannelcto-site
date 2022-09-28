@@ -297,6 +297,9 @@ body{
   --iPad-shadow-width: 0px;
   --iPad-shadow-height: 0px;
 
+  --Mac-width: 110vw;
+  --Mac-height: calc(var(--Mac-width) * .61);
+
   --surface: white;
   --font-color-body: #222;
 }
@@ -339,6 +342,17 @@ nav :last-child{
 
 .iPad{
   max-width: var(--iPad-width);
+}
+
+.Mac {
+  max-width: var(--Mac-width);
+  height: var(--Mac-height);
+  position: absolute;
+}
+
+.Mac-container {
+  height: var(--Mac-height);
+  position: relative;
 }
 
 .iPhone::before{
@@ -426,6 +440,9 @@ img{
     --iPad-width: 861px;
     --iPad-shadow-width: 979px;
     --iPad-shadow-height: 779px; 
+
+    --Mac-width: 1060px;
+    --Mac-height: 650px;
   }
 
   #home {
