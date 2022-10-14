@@ -396,6 +396,7 @@
       padding: 0 20px;
   } */
 
+
   .menuwrapper{
     position: fixed;
     left: 50%;
@@ -420,17 +421,20 @@
   }
 
   .tag{
-    display: grid;
-    grid-auto-flow: column;
+    display: flex;
+flex-direction: row;
     grid-gap: 8px;
     width: max-content;
     align-items: center;
-    border-radius: 16px;
+    justify-content: center;
+    border-radius: 12px;
     padding: 0 8px;
     margin: auto;
     margin-top: 8px;
     color: var(--surface);
     text-transform: uppercase;
+    padding: 0.3em 1em ;
+
   }
 
   .tag > p{
