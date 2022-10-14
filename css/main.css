@@ -263,22 +263,23 @@ textarea {
 
 /* My Custom Styles */
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-html, body{
+html,
+body {
   overflow-x: hidden;
 }
 
-body{
+body {
   background-color: var(--surface);
   color: var(--font-color-body);
 }
-body{
-  --red: #EC2227;
-  --m-shadow: 0px 0px 17px rgba(0, 0, 0, 0.06), 
-              13px 13px 28px rgba(0, 0, 0, 0.09);
+body {
+  --red: #ec2227;
+  --m-shadow: 0px 0px 17px rgba(0, 0, 0, 0.06),
+    13px 13px 28px rgba(0, 0, 0, 0.09);
 
   --font-body: "Open Sans", sans-serif;
   --font-special: "Montserrat", sans-serif;
@@ -302,23 +303,30 @@ body{
 }
 
 .menuwrapper {
-  width: 80%;
-  max-width: max-content;
-  background-color: hsla(360, 150%, 100%, .7);
+  width: 100%;
+  top: 0;
+  background-color: hsla(360, 150%, 100%, 0.7);
   backdrop-filter: blur(15px);
   box-shadow: var(--m-shadow);
-  border-radius: 16px;
-  padding: 16px 0 16px 16px;
-  overflow: scroll;
+  /* border-radius: 16px; */
+  padding: 15px 30px;
+  /* overflow: scroll; */
 }
 
-nav{
-  display: grid;
-  grid-auto-flow: column;
-  grid-gap: 24px;
+.nav-links-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
-nav :last-child{
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+
+nav :last-child {
   padding-right: 16px;
 }
 
@@ -327,89 +335,96 @@ nav :last-child{
   padding: 0 20px 50px 20px;
 }
 
-
 /* device styling start*/
-.iPhone, iPad{
+.iPhone,
+iPad {
   position: relative;
-} 
+}
 
-.iPhone{
+.iPhone {
   max-width: var(--iPhone-width);
 }
 
-.iPad{
+.iPad {
   max-width: var(--iPad-width);
 }
 
-.iPhone::before{
+.iPhone::before {
   background-image: url(../img/iOS_Shadow.png);
   width: var(--iPhone-shadow-width);
   height: var(--iPhone-shadow-height);
   background-size: var(--iPhone-shadow-width) var(--iPhone-shadow-height);
   background-repeat: no-repeat;
-  content: '';
+  content: "";
   position: absolute;
   z-index: var(--below-image);
   top: -6px;
   left: -12px;
 }
 
-.iPad::before{
+.iPad::before {
   background-image: url(../img/iPad_Shadow.png);
   width: var(--iPad-shadow-width);
   height: var(--iPad-shadow-height);
   background-size: var(--iPad-shadow-width) var(--iPad-shadow-height);
   background-repeat: no-repeat;
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   z-index: var(--below-image);
 }
 
 /* font styling start */
-h1, h2, h3, h4, h5, h6, p{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   font-family: var(--font-special);
   margin: 0;
 }
 
-h1{
-    font-size: 45px;
-    font-weight: 900;
+h1 {
+  font-size: 45px;
+  font-weight: 900;
 }
 
-h2{
-    font-size: 72px;
-    font-weight: 200;
-    text-align: center;
+h2 {
+  font-size: 72px;
+  font-weight: 200;
+  text-align: center;
 }
 
-h3{
+h3 {
   font: 700 18px/2rem var(--font-special);
   color: var(--red);
 }
 
-p{
+p {
   font-family: var(--font-body);
   font-weight: 300;
   font-size: 18px;
   line-height: 2rem;
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
 
 nav > a {
-    font-family: var(--font-special);
-    font-size: 18px;
-    line-height: 2rem;
-    border: none;
-    white-space: nowrap;
-  }
-/* font styling end */ 
+  font-family: var(--font-special);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 2rem;
+  border: none;
+  white-space: nowrap;
+}
+/* font styling end */
 
-img{
+img {
   position: relative;
   z-index: var(--image-zindex);
   max-width: 100%;
@@ -417,15 +432,14 @@ img{
 
 /* Desktop CSS */
 @media only screen and (min-width: 980px) {
-
-  body{
+  body {
     --iPhone-width: 387px;
     --iPhone-shadow-width: 628px;
     --iPhone-shadow-height: 963px;
 
     --iPad-width: 861px;
     --iPad-shadow-width: 979px;
-    --iPad-shadow-height: 779px; 
+    --iPad-shadow-height: 779px;
   }
 
   #home {
@@ -434,13 +448,13 @@ img{
     padding: 0 20px;
   }
 
-  .iPhone::before{
+  .iPhone::before {
     top: -9px;
     left: -18px;
   }
 
   /* font styling start */
-  h1{
+  h1 {
     font-size: 64px;
     font-weight: 900;
   }
