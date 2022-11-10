@@ -261,6 +261,7 @@ textarea {
   }
 }
 
+
 /* My Custom Styles */
 
 html{
@@ -271,10 +272,6 @@ html, body{
   overflow-x: hidden;
 }
 
-body{
-  background-color: var(--surface);
-  color: var(--font-color-body);
-}
 body{
   --red: #EC2227;
   --m-shadow: 0px 0px 17px rgba(0, 0, 0, 0.06), 
@@ -299,27 +296,8 @@ body{
 
   --surface: white;
   --font-color-body: #222;
-}
 
-.menuwrapper {
-  width: 80%;
-  max-width: max-content;
-  background-color: hsla(360, 150%, 100%, .7);
-  backdrop-filter: blur(15px);
-  box-shadow: var(--m-shadow);
-  border-radius: 16px;
-  padding: 16px 0 16px 16px;
-  overflow: scroll;
-}
-
-nav{
-  display: grid;
-  grid-auto-flow: column;
-  grid-gap: 24px;
-}
-
-nav :last-child{
-  padding-right: 16px;
+  color: var(--font-color-body);
 }
 
 #home {
@@ -327,6 +305,14 @@ nav :last-child{
   padding: 0 20px 50px 20px;
 }
 
+section {
+  padding-top: 100px;
+}
+
+.content {
+  display: grid;
+  margin-top: 60px;
+}
 
 /* device styling start*/
 .iPhone, iPad{
@@ -367,7 +353,7 @@ nav :last-child{
 }
 
 /* font styling start */
-h1, h2, h3, h4, h5, h6, p{
+h1, h2, h3, h4, h5, h6, p {
   font-family: var(--font-special);
   margin: 0;
 }
@@ -395,25 +381,29 @@ p{
   line-height: 2rem;
 }
 
-a{
-  text-decoration: none;
-  color: inherit;
-}
-
-nav > a {
-    font-family: var(--font-special);
-    font-size: 18px;
-    line-height: 2rem;
-    border: none;
-    white-space: nowrap;
-  }
-/* font styling end */ 
-
 img{
   position: relative;
   z-index: var(--image-zindex);
   max-width: 100%;
 }
+
+/* Mobile only CSS */
+@media only screen and (max-width: 980px) {
+  
+  .iPhone, .iPad{
+    margin: auto;
+  }
+
+  h3{
+    margin-top: 16px;
+  }
+
+  .content{
+    grid-auto-flow: row;
+    grid-row-gap: 24px;
+  }
+}
+/* Mobile only CSS end */
 
 /* Desktop CSS */
 @media only screen and (min-width: 980px) {
@@ -445,5 +435,100 @@ img{
     font-weight: 900;
   }
   /* font styling end */
+
+  .content{
+    margin-top: 100px;
+  }
+
+  .feature{
+    width: 352px;
+  }
+  
+  section{
+    padding-top: 200px;
+  }
 }
-/* device styling end */
+
+
+
+/* not needed in hotwax.co */
+.menuwrapper {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 36px;
+  z-index: 11;
+  width: 80%;
+  max-width: max-content;
+  background-color: hsla(360, 150%, 100%, .7);
+  backdrop-filter: blur(15px);
+  box-shadow: var(--m-shadow);
+  border-radius: 16px;
+  padding: 16px 0 16px 16px;
+  overflow: scroll;
+}
+
+nav {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 24px;
+}
+
+nav :last-child {
+  padding-right: 16px;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+nav > a {
+    font-family: var(--font-special);
+    font-size: 18px;
+    line-height: 2rem;
+    border: none;
+    white-space: nowrap;
+  }
+
+.tag {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 8px;
+  width: max-content;
+  align-items: center;
+  border-radius: 16px;
+  padding: 0 8px;
+  margin: auto;
+  margin-top: 8px;
+  color: var(--surface);
+  text-transform: uppercase;
+}
+
+.tag > p {
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: .1em;
+}
+
+.tag > .icon {
+  height: 18px;
+  width: 18px;
+  border-radius: 20px;
+}
+
+/* Desktop CSS */
+@media only screen and (min-width: 980px) {
+  .card {
+    padding: 40px;
+  }
+
+  a > div:hover {
+    box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.06), 
+                5px 5px 8px rgba(0, 0, 0, 0.09);;
+  }
+
+  a > div:active {
+      background-color: rgb(221, 221, 221);
+  }
+}

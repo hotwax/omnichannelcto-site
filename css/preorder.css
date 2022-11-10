@@ -1,0 +1,11 @@
+/* Desktop CSS */
+@media only screen and (min-width: 980px) {
+    /* Pre Order */
+    #PO1, #PO2{
+        margin: auto;
+    }
+  
+    #PO2{
+        margin-top: 80px;
+    }
+}
